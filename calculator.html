@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contractor vs Salary Calculator Australia 2026-27 | TrueRate</title>
+<meta name="description" content="Compare an Australian sole-trader day rate with a permanent salary after tax, super, business expenses and unpaid leave. Free, private, no account.">
+<meta name="apple-itunes-app" content="app-id=6811588579">
+<link rel="canonical" href="https://enlitened.github.io/truerate-support/calculator.html">
+<meta property="og:title" content="Is that day rate worth more than a salary?">
+<meta property="og:description" content="A free Australian contractor versus salary calculator. See take-home and super side by side, with the assumptions visible.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://enlitened.github.io/truerate-support/calculator.html">
+<meta property="og:image" content="https://enlitened.github.io/truerate-support/icon-256.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="icon-256.png"><link rel="stylesheet" href="calculator.css">
+<script src="calculator.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#calculator">Skip to calculator</a>
+<header><a class="brand" href="index.html"><img src="icon-256.png" width="36" height="36" alt="">TrueRate</a><a href="https://apps.apple.com/au/app/truerate-contractor-tax/id6811588579?pt=129383521&amp;ct=web_calculator">Get the app</a></header>
+<main>
+<section class="intro"><h1>Is that day rate worth more than a salary?</h1><p>Put the two offers on the same footing. Compare the cash you keep and the super you build, after the costs of contracting.</p></section>
+<div id="calculator" class="workspace">
+<form id="inputs" aria-label="Comparison assumptions">
+<fieldset><legend>Your two offers</legend>
+<label for="rate">Contractor day rate, before GST</label><div class="input-line"><span aria-hidden="true">A$</span><input id="rate" type="number" min="250" max="2000" step="25" value="900" required aria-describedby="rate-help"></div>
+<p class="hint" id="rate-help">A$250 to A$2,000, in A$25 steps. GST is added on top.</p>
+<label for="salary">Permanent salary, before super</label><div class="input-line"><span aria-hidden="true">A$</span><input id="salary" type="number" min="0" max="300000" step="1000" value="160000" required aria-describedby="salary-help"></div><p class="hint" id="salary-help">A$0 to A$300,000, in A$1,000 steps. Employer super is on top.</p>
+</fieldset>
+<fieldset><legend>Make the year realistic</legend>
+<div class="fields"><div><label for="days">Days worked each week</label><select id="days"><option>3</option><option>4</option><option selected>5</option></select></div>
+<div><label for="leave">Unpaid leave, weeks</label><select id="leave"><option>2</option><option selected>4</option><option>6</option></select></div>
+<div><label for="gap">Contract gaps, weeks</label><select id="gap"><option>0</option><option selected>2</option><option>6</option></select></div>
+<div><label for="expenses">Annual business expenses</label><select id="expenses"><option value="0">A$0</option><option value="6000" selected>A$6,000</option><option value="12000">A$12,000</option></select></div></div>
+<label class="check"><input id="cover" type="checkbox">I have private hospital cover</label><label class="check"><input id="loan" type="checkbox">I have a study loan (HELP/STSL)</label>
+</fieldset>
+<p class="hint">Inputs stay in this browser. No account, saved history or financial tracking.</p>
+</form>
+<section class="results" aria-labelledby="result-title"><h2 id="result-title">What the year leaves you</h2>
+<p id="status" role="status" aria-live="polite">Loading the comparison…</p>
+<div id="answer" hidden>
+<p class="verdict" id="verdict"></p><div class="table-scroll" tabindex="0" role="region" aria-label="Annual comparison table; scroll horizontally at larger text sizes"><table><caption>Annual estimated cash and super</caption><thead><tr><th scope="col">Annual figures</th><th scope="col">Contractor</th><th scope="col">Permanent</th></tr></thead><tbody>
+<tr class="takehome"><th scope="row">Cash you keep</th><td id="contract-cash"></td><td id="salary-cash"></td></tr>
+<tr><th scope="row">Super</th><td id="contract-super"></td><td id="salary-super"></td></tr>
+<tr><th scope="row">Estimated tax</th><td id="contract-tax"></td><td id="salary-tax"></td></tr>
+<tr><th scope="row">Gross before GST / super</th><td id="contract-gross"></td><td id="salary-gross"></td></tr>
+</tbody></table></div>
+<p id="equivalent" class="equivalent"></p><p id="billable" class="hint"></p><p id="gst" class="hint"></p>
+<p class="hint">The comparison counts cash plus super. Paid leave is already included in a salary; contractor leave reduces billings. It is not added again as a separate benefit.</p>
+</div></section></div>
+<section class="assumptions"><h2>What this estimate assumes</h2><p>2026-27 Australian resident, single-person tax settings. Sole trader / ABN, GST registered with GST on top, self-funded super at 12% of ex-GST billings (subject to the contribution cap). A 52-week year, five sick days and ten public holidays, plus your selected leave and gaps. Business expenses are ex-GST. Permanent salary includes paid leave and has 12% employer super on top. No bonus, salary sacrifice, other income, other deductions, dependants or capped study-loan balance are modelled.</p><p>Study-loan repayments, Medicare levy and surcharge use the same rules as the app. The salary-side standard work deduction is applied where eligible. The calculator offers a limited set of exact inputs; it does not interpolate tax estimates between them.</p><p>Estimates for planning only, not tax, legal or financial advice. Actual work patterns, tax circumstances, timing and cash-flow risks can change the decision. Confirm your obligations with the ATO or a registered tax professional.</p></section>
+<section class="download"><h2>Take the decision further.</h2><p>Check other contracting structures, dated contracts and offers in TrueRate. The expected forecast is free. Pro adds ongoing Safe to Spend, payment updates, cash runway and advanced scenarios.</p><a class="cta" href="https://apps.apple.com/au/app/truerate-contractor-tax/id6811588579?pt=129383521&amp;ct=web_calculator">Download on the App Store</a><p class="hint">TrueRate is on iPhone and Mac, sharing one plan through your private iCloud.</p></section>
+<noscript><p>JavaScript is needed to choose a pre-calculated comparison. You can use the native TrueRate app instead.</p></noscript>
+</main><footer><a href="privacy.html">Privacy</a><a href="index.html">About TrueRate</a><span>Australian contractor decisions, with the assumptions visible.</span></footer>
+</body></html>
